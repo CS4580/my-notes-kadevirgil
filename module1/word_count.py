@@ -19,11 +19,11 @@ def word_count(address):
 
         words = temp.split()
         word_count = len(words)
-        
+
     return word_count
 
 def main():
-    """Driven Function
+    """ Driven Function
     """
     file_addr = 'http://icarus.cs.weber.edu/~hvalle/sample_data/poem.txt'
     count = word_count(file_addr)
