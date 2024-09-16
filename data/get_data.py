@@ -29,10 +29,9 @@ def download_file(url, file_name):
             file.write(response.content)
         print(f"File downloaded successfully: {file_name}")
 
-        # Check if the file is a ZIP file
+        # Check if the file is a ZIP file, if True unzippes the download file into the pwd
         if is_zipfile(file_name):
             unzip_file(file_name)
-            print("Unzipped file successfully!")
     else:
         print(f"Failed to download file. Status code: {response.status_code}")
 
