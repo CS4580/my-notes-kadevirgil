@@ -3,12 +3,17 @@
 
 # Global Variables
 SERVER_URL = "http://icarus.cs.weber.edu/~hvalle/cs4580/data/"
-FILE_NAME = "pandas01Data.zip"
+FILE_NAME = "pandas02Data.zip"
+KAGGLE_DATASET_NAME = ""
 
 import os
 import requests
 from zipfile import ZipFile, is_zipfile
 
+# TODO: Crate another function to download the files 
+# frome kaggle directly by passing the dataset name
+def download_kaggle_data(dataset_name): 
+    pass
 
 def download_file(url, file_name):
     """Downloads a file from a URL and optionally unzips it if it is a ZIP file.
