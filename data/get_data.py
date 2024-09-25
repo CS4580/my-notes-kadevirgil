@@ -60,4 +60,4 @@ def main(server_url, file_name):
 
 
 if __name__ == "__main__":
-    main(SERVER_URL, FILE_NAME)
+    unzip_file("data/wine-reviews.zip")
