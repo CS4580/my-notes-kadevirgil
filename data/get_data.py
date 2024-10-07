@@ -3,7 +3,7 @@
 
 # Global Variables
 SERVER_URL = "http://icarus.cs.weber.edu/~hvalle/cs4580/data/"
-FILE_NAME = "pandas02Data.zip"
+FILE_NAME = "plottingDemo01.zip"
 KAGGLE_DATASET_NAME = ""
 
 import os
@@ -48,8 +48,8 @@ def unzip_file(file_name):
         file_name (str): Name of the ZIP file to unzip.
     """
     with ZipFile(file_name, "r") as zip_ref:
-        # Extract all the contents to the current working directory
-        zip_ref.extractall()
+        # Extract all the contents to the data directory
+        zip_ref.extractall('data')
         print(f"File unzipped successfully: {file_name}")
     os.remove(file_name)
 
@@ -60,4 +60,4 @@ def main(server_url, file_name):
 
 
 if __name__ == "__main__":
-    unzip_file("data/wine-reviews.zip")
+    main(SERVER_URL, FILE_NAME)
