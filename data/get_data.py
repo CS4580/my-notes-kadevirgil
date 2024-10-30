@@ -3,14 +3,14 @@
 
 # Global Variables
 SERVER_URL = "http://icarus.cs.weber.edu/~hvalle/cs4580/data/"
-FILE_NAME = "seaborData.zip"
+FILE_NAME = "movies.csv"
 KAGGLE_DATASET_NAME = ""
 
 import os
 import requests
 import argparse
 from zipfile import ZipFile, is_zipfile
-import kaggle
+# import kaggle
 
 # TODO: Create another function to download the files 
 # from Kaggle directly by passing the dataset name
