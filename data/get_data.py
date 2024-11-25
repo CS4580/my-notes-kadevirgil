@@ -3,7 +3,7 @@
 
 # Global Variables
 SERVER_URL = "http://icarus.cs.weber.edu/~hvalle/cs4580/data/"
-FILE_NAME = "movies.csv"
+FILE_NAME = "FuelConsumptionCo2.csv"
 KAGGLE_DATASET_NAME = ""
 
 import os
